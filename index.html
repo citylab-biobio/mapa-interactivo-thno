@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Mapa de Calor de Talcahuano</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .welcome-container {
+            text-align: center;
+        }
+        .welcome-container img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .welcome-container h1 {
+            margin-bottom: 20px;
+        }
+        .welcome-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .welcome-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <img src="Picture1.png" alt="Logo">
+        <h1>Resultado Taller Participativo: "Reflexionemos juntos sobre el Talcahuano que soñamos"</h1>
+        <p>Presione el botón para visualizar el mapa de calor interactivo</p>
+        <button class="welcome-button" onclick="redirectToMap()">Ir al mapa</button>
+    </div>
+
+    <script>
+        function redirectToMap() {
+            window.location.href = 'mapas_calor_subdivisiones.html';
+        }
+    </script>
+</body>
+</html>
